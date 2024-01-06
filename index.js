@@ -53,7 +53,7 @@ app.get("/gd", async (req, res) => {
       timeout: 5000,
     });
 
-    const filePath = path.join(__dirname, "video");
+    const filePath = path.join(__dirname, "/");
     if (!fs.existsSync(filePath)) {
       fs.mkdirSync(filePath, { recursive: true });
     }
